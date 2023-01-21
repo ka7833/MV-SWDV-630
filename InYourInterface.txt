@@ -1,0 +1,5 @@
+3) Classmates is actually an object holding a reference to Teams and Teams class is the one that implements the __len__ method.
+
+4) Interfaces are like contracts that hold the method signatures that the class implements. Essentially these methods are abstract methods without implementation. The implementation of these abstract methods is defined by the classes that implement the interface. Implementation is actually the implementation of the interfaces by the classes that implement them. The class which contains methods which gives the definition to those abstract methods is the implementation.
+
+5) Each storage device can be implemented as methods in a class and we can add the conditions necessary for each storage device in those methods. In the interface we will show the functionalities(only the method declaration) that are available for a storage device. We provide interface that allows to select a storage device and files that contain information and based on selection of storage device we call the method that implements it.
