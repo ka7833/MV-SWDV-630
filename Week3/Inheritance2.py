@@ -16,8 +16,8 @@ class Accio(Spell):
     def __init__(self):
         Spell.__init__(self, 'Accio', 'Summoning Charm')
         
-    #def __str__(self):
-        #return 'This charm summons an object to the caster, potentially over a significant distance'
+    def get_description(self):
+        return 'This charm summons an object to the caster, potentially over a significant distance'
 
 class Confundo(Spell):
     def __init__(self):
@@ -57,7 +57,7 @@ Causes the victim to become confused and befuddled.
     def __init__(self):
         Spell.__init__(self, 'Accio', 'Summoning Charm')
         
-    def __str__(self):
+    def get_description(self):
         return 'This charm summons an object to the caster, potentially over a significant distance'
         
    Please see uncommented code top
