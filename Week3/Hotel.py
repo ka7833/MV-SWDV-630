@@ -55,7 +55,7 @@ class SuiteHotel(DeluxeHotel):
         self.extras = extras
     
     def show_extras(self):
-        print("Extras: ", self.extras)
+        print("Extras:", self.extras)
     
     def get_available_rooms(self):
         return self.availableRooms
@@ -86,15 +86,16 @@ class LuxuryHotel(SuiteHotel):
             print("Sorry, luxury rooms not available.")
             
     def get_points_earned(self):
-        return self.pointsEarned
+        return "You have earned " + str(self.pointsEarned) + " points"
 
 
 hotel1 = Hotel("Hotel 1", roomType.DELUXE, 10, 3)
+print(f"----------------{hotel1.get_name()}----------------")
 print(hotel1.get_price())
-hotel1.reserve_room(10) # Cannot
-hotel1.reserve_room(2) # 2 rooms booked
-hotel1.reserve_room(1) # 1 rooms booked
-hotel1.reserve_room(1) # There are
+hotel1.reserve_room(10)
+hotel1.reserve_room(2)
+hotel1.reserve_room(1)
+hotel1.reserve_room(1) 
 print(hotel1.has_rooms_available())
 
 # Deluxe
@@ -108,18 +109,20 @@ print(hotel2.get_price())
 # Suite
 hotel3 = SuiteHotel("Hotel 3", roomType.SUITE, 100, 10, amenities, "Swimming pool")
 print(f"----------------{hotel3.get_name()}----------------")
-hotel3.reserve_room(2) # 2 rooms book
-hotel3.reserve_room(3) # 3 rooms booked
-hotel3.reserve_room(4) # 4 rooms booked
+hotel3.reserve_room(2)
+hotel3.reserve_room(3)
+hotel3.reserve_room(4)
 print(hotel3.get_available_rooms())
 print(hotel3.get_price())
+print(hotel3.show_extras())
 
 hotel4 = LuxuryHotel("Hotel 4", roomType.LUXURY, 200, 100, amenities, "Swimming pool")
 print(f"----------------{hotel4.get_name()}----------------")
-hotel4.book_luxury_room(10) # 2 rooms book
-hotel4.book_luxury_room(40) # 3 rooms booked
-hotel4.book_luxury_room(50) # 4 rooms booked
-hotel4.book_luxury_room(1) # 1 rooms b
+hotel4.book_luxury_room(10)
+hotel4.book_luxury_room(40)
+hotel4.book_luxury_room(50)
+hotel4.book_luxury_room(1) 
 print(hotel4.get_price())
 print(hotel4.get_available_rooms())
 print(hotel4.get_points_earned())
+print(hotel4.show_extras())
