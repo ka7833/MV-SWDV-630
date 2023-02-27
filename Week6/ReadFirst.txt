@@ -1,0 +1,1 @@
+Delete myhotel.db file then run Customer.py
