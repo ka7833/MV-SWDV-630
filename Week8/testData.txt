@@ -1,0 +1,5 @@
+reservations = [
+    {"id": 1, "firstName": "John", "lastName": "Doe", "checkInDate": "2023-03-01", "checkOutDate": "2023-03-05", "numOfRooms": 2},
+    {"id": 2, "firstName": "Jane", "lastName": "Doe", "checkInDate": "2023-03-03", "checkOutDate": "2023-03-07", "numOfRooms": 1},
+    {"id": 3, "firstName": "Bob", "lastName": "Smith", "checkInDate": "2023-04-01", "checkOutDate": "2023-04-05", "numOfRooms": 3}
+]
